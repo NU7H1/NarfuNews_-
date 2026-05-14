@@ -3,19 +3,19 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
 export default defineConfig({
-  root: path.resolve (__dirname, 'Frontend'),
+  root: path.resolve (__dirname, 'frontend'),
   server: {
-    port: 3001
+    port: 3010,
     open: true
-  }
+  },
   build:{
     outDir: path.resolve(__dirname,'../dist'),
     emptyOutDir: true
   },
   resolve:{
     alias:{
-      '@': path.resolve(__dirname,'Frontend'),
+      '@': path.resolve(__dirname,'frontend'),
     }
-  }
+  },
   plugins: [vue()]
 })
