@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Kirill/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/3cf697d5-38be-4a49-a95d-f05239ab09dd/dedc43a7-a111-4642-94c3-7b7cd84a41de/skills/docx/**)",
+      "Bash(python scripts/office/unpack.py \"C:\\\\Users\\\\Kirill\\\\Downloads\\\\Лабораторная работа 7 \\(3\\).docx\" \"C:\\\\Users\\\\Kirill\\\\Downloads\\\\lab7_unpacked\")",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
