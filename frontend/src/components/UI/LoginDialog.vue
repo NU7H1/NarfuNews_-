@@ -45,7 +45,7 @@
 <script>
 export default {
   name: 'LoginDialog',
-  inject: ['loginService', 'UserService'],
+  inject: ['loginService', 'userService'],
   data() {
     return {
       dialog: false,
@@ -82,7 +82,7 @@ export default {
       this.loading = true;
       try {
         const authRes = await this.loginService.authorizationUser(this.loginEmail, this.loginPassword);
-        sessionStorage.setItem('userRecordId', authRes.recordId);
+        sessionStorage.setItem('userRecordId', authRes.userId);
         const userData = await this.userService.getCurrentUser(authRes.userId);
         const fields = userData.fields;
         const fullName = `${fields.Surname || ''} ${fields.Name || ''} ${fields.Patronymic || ''}`.trim();
